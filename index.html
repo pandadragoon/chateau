@@ -18,6 +18,59 @@
   </head>
   <body>
 		<div class="container">
+		<!--Modal for the Contact Section -->
+			<div class="modal fade" id="contactModal">
+				<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="submit" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
+								<h2 class="modal-title">Contact Us</h2>
+							</div>
+							<div class="modal-body">
+								<div class="row">
+										<div class="col-sm-5">	
+											<h2>Wilde's Chateau 24</h2>
+											<address>
+												2412 Iowa St <br>
+												Lawrence, KS 66046
+											</address>
+											<a href="mailto:info@wildeschateau.com">info@wildeschateau.com</a> <br>
+											<a href="tel:785-856-1514">(785) 856-1514</a>
+										</div>
+										<div class="col-sm-7">
+											<form action="contact_form.php" method="post" role="form">
+												<div class="form-group">
+													<label for="name">Name</label>
+													<input type="text" class="form-control" name="name" id="name" placeholder="Your Name">
+												</div>
+												<div class="form-group">
+													<label for="email">Email address</label>
+													<input type="email" class="form-control" name="email" id="email" placeholder="Enter email">
+												</div>
+												<div class="form-group">
+													<label for="subject">Subject</label>
+													<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject of Email">
+												</div>
+												<div class="form-group">
+													<label for="message">Message</label>
+													<textarea class="form-control" rows="6" id="message" placeholder="Message"></textarea>
+												</div>
+												<button type="submit" class="btn btn-primary">Submit</button>
+											</form>
+										</div>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<ul>
+									<li><a href="#" class="icon-facebook"></a></li>
+									<li><a href="#" class="icon-googleplus"></a></li>
+									<li><a href="#" class="icon-twitter"></a></li>
+									<li><a href="#" class="icon-yelp"></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+			</div>
     <header>
       <!-- Static navbar -->
       <div class="navbar navbar-default" role="navigation">
@@ -36,7 +89,7 @@
               <li><a href="#">Events</a></li>
               <li><a href="#">Photos</a></li>
 							<li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a data-toggle="modal" href="#contactModal">Contact</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
