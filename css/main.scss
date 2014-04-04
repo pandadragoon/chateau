@@ -41,19 +41,40 @@
 
 /*Navigation
 ********************************************************************/
+.navbar-inverse {
+	background-color: #3D3D3D;
+}
+.nav {
+	li {
+		margin: 0 20px;
+		a {
+			padding-right: 20px;
+			padding-left: 20px;
+		}
+	}
+}
+
+.navbar-nav>li>a.contact {
+	color: #FFF;
+	font-weight: bold;
+	font-size: 1.5em;
+	background: #C72442;
+	border-radius: 5%;
+	padding: 10px 15px;
+	margin-top: 5px;
+}
+
+
+/*Branding
+********************************************************************/
 
 #branding {
 	margin: 20px 0px;
 }
 #social_media {
-	float: right;
-	margin-right: 5%;
-	width: 45%;
-	text-align: right;
 	ul{
 	list-style-type: none;
 	font-size: 2.5em;
-	margin-top: 20px;
 		li {
 			display: inline-block;
 			a {
@@ -62,13 +83,27 @@
 		}
 	}
 }
+#logo img{
+	margin-right: 20px;
+}
   
-  #logo {
-    float: left;
-    margin-left: 5%;
-    text-align: left;
-    width: 45%;
-		img {
-			margin-right: 20px;
-		}
-  }
+@media screen and (min-width: 768px) {
+	#social_media {
+		float: right;
+		margin-right: 5%;
+		margin-top: 20px;
+		width: 45%;
+		text-align: right;
+	}
+	
+	#logo {
+	float: left;
+	margin-left: 5%;
+	text-align: left;
+	width: 45%;
+	img {
+		margin-right: 20px;
+	}
+	}
+}
+
