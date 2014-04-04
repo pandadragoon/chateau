@@ -49,6 +49,8 @@
   border-radius: 5%;
   padding: 10px 15px;
   margin-top: 5px; }
+  .navbar-nav > li > a.contact:hover {
+    background-color: #9C1F36; }
 
 /*Branding
 ********************************************************************/
