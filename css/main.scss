@@ -41,6 +41,7 @@
 
 /*Navigation
 ********************************************************************/
+
 .navbar-inverse {
 	background-color: #3D3D3D;
 }
@@ -82,12 +83,39 @@
 			display: inline-block;
 			a {
 				padding: 10px;
+				color: #000;
+				&:hover {
+					text-decoration: none;
+				}
 			}
 		}
 	}
 }
-#logo img{
-	margin-right: 20px;
+
+#facebook:hover {
+	color: #3b5998;
+}
+
+#googleplus:hover {
+	color: #dd4b39;
+}
+
+#twitter:hover {
+	color: #00aced;
+}
+
+#yelp:hover {
+	color: #c41200;
+}
+
+#logo {
+	color: #000;
+	&:hover {
+		text-decoration: none;
+	}
+	img{
+		margin-right: 20px;
+		}
 }
   
 @media screen and (min-width: 768px) {
@@ -101,12 +129,19 @@
 	
 	#logo {
 	float: left;
-	margin-left: 5%;
+	
 	text-align: left;
-	width: 45%;
+	width: 50%;
 	img {
 		margin-right: 20px;
 	}
 	}
+}
+
+/*Footer
+********************************************************************/
+
+.center {
+	text-align: center;
 }
 

@@ -17,7 +17,6 @@
     <![endif]-->
   </head>
   <body>
-		<div class="container">
 		<!--Modal for the Contact Section -->
 			<div class="modal fade" id="contactModal">
 				<div class="modal-dialog">
@@ -72,9 +71,25 @@
 					</div>
 			</div>
     <header>
-      <!-- Static navbar -->
+      	<div class="container">
+				<div id="branding" class="clearfix">
+				<a id="logo" href="#">
+					<img class="img-responsive pull-left" src="img/chateau-logo.png" />
+					<h1>Wilde's Chateau 24</h1>
+				</a>
+				<div id="social_media">
+					<ul>
+						<li><a href="#" class="icon-facebook" id="facebook"></a></li>
+						<li><a href="#" class="icon-googleplus" id="googleplus"></a></li>
+						<li><a href="#" class="icon-twitter" id="twitter"></a></li>
+						<li><a href="#" class="icon-yelp" id="yelp"></a></li>
+					</ul>
+				</div>
+			</div>
+			</div>
+			<!-- Static navbar -->
       <div class="navbar navbar-inverse" role="navigation">
-        <div class="container-fluid">
+        <div class="container-fluid container">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
               <span class="sr-only">Toggle navigation</span>
@@ -94,55 +109,46 @@
           </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
       </div>
-			<div id="branding" class="clearfix">
-				<a id="logo" href="#">
-					<img class="img-responsive pull-left" src="img/chateau-logo.png" />
-					<h1>Wilde's Chateau 24</h1>
-				</a>
-				<div id="social_media">
-					<ul>
-						<li><a href="#" class="icon-facebook"></a></li>
-						<li><a href="#" class="icon-googleplus"></a></li>
-						<li><a href="#" class="icon-twitter"></a></li>
-						<li><a href="#" class="icon-yelp"></a></li>
-					</ul>
-				</div>
-			</div>
+		
 		</header>
 		<section>
 			<div class="jumbotron">
-				<div class="bs-example">
+				<div class="carousel-slide" data-ride="carousel" data-interval="3000">
 						<div class="carousel-inner">
 							<div class="item active">
-								<img src="http://lorempixel.com/400/200" alt="First slide image" class="center-block">
+								<img src="img/banner1.jpg" alt="First slide image" class="center-block">
 							</div>
 							<div class="item">
-								<img src="http://lorempixel.com/400/200" alt="Second slide image" class="center-block">
+								<img src="img/banner2.jpg" alt="Second slide image" class="center-block">
 							</div>
 							<div class="item">
-								<img src="http://lorempixel.com/400/200" alt="Third slide image" class="center-block">
+								<img src="img/banner3.jpg" alt="Third slide image" class="center-block">
+							</div>
+							<div class="item">
+								<img src="img/banner4.jpg" alt="Third slide image" class="center-block">
 							</div>
 						</div>
 				</div>
 		</section>
+		<div class="container">
 		<section>
-			<div clear="row">
-				<div class="col-sm-6">
-					<h2>About Us</h2>
-					<p>aksdjf;asdklfjklasdfj;asdfjkas;dklfjaskl;fjaskl;dfjaskl;fjaskl;dfjsdl;fkj</p>
+			<div class="row">
+				<div class="col-sm-4 col-sm-offset-2">
+					<h2>Info</h2>
+					<p>Lawrence's hottest dance club! Join us on Wednesdays for Pride Night, Fridays for Retro Night, and Saturdays for dance parties! 9pm to 2am. Always 18 and up!</p>
 				</div>
-				<div class="col-cm-6">
+				<div class="col-sm-5 col-sm-offset-1">
 					<h2>Schedule</h2>
-					<p>aksdjflasdkjfklasdjfkl;asdfkljasdfkljasdfkljasdfklj</p>
+						<ul>
+							<li>Wednesday – 9PM – 2AM</li>
+							<li>Friday – Event by Booking</li>
+							<li>Saturday –Event by Booking</li>
+						</ul>
 				</div>
 			</div>
 		</section>
-		<section>
-			<h3>Contact</h3>
-			<p>kadjfkoajsdfkasdjfklsdjfkljsdafkljasdf</p>
-		</section>
 		<footer>
-			<p>&copy;2014 Wilde's Chateau</p>
+			<p class="center">&copy;2014 Wilde's Chateau</p>
 		</footer>
 	</div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
