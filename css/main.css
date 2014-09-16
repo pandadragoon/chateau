@@ -39,7 +39,7 @@ body {
 /*Navigation
 ********************************************************************/
 .navbar-inverse {
-  background-color: #3D3D3D; }
+  background-color: #3d3d3d; }
 
 .nav li {
   margin: 0 20px; }
@@ -97,11 +97,20 @@ body {
   color: #c41200; }
 
 #logo {
-  color: #000; }
+  color: #000;
+  float: left;
+  text-align: left;
+  width: 50%; }
   #logo:hover {
     text-decoration: none; }
   #logo img {
     margin-right: 20px; }
+
+#emp {
+  background-color: #000;
+  color: #fff;
+  border-radius: 100%;
+  padding: 5px 10px; }
 
 @media screen and (min-width: 768px) {
   #social_media {
@@ -109,26 +118,23 @@ body {
     margin-right: 5%;
     margin-top: 20px;
     width: 45%;
-    text-align: right; }
-
-  #logo {
-    float: left;
-    text-align: left;
-    width: 50%; }
-    #logo img {
-      margin-right: 20px; } }
+    text-align: right; } }
 /*Contact Modal
 ********************************************************************/
 #modal_social {
   text-align: center; }
 
 .modal-header {
-  background-color: #3D3D3D;
+  background-color: #3d3d3d;
   color: #fff; }
 
 .send {
   background-color: #000;
   color: #fff; }
+  .send:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000; }
 
 .center-a {
   display: block;
@@ -145,14 +151,57 @@ body {
 .jumbotron {
   background-color: transparent; }
 
+.row {
+  margin-right: 0;
+  margin-left: 0;
+  padding-right: 0;
+  padding-left: 0; }
+
 .info {
-  background-color: #3D3D3D;
+  background-color: #3d3d3d;
   color: #fff;
-  padding: 20px;
+  padding: 20px 0 20px 0;
   border-radius: 10px; }
   .info ul {
     list-style-type: none;
-    padding: 0; }
+    padding: 0;
+    text-align: center; }
+  .info p {
+    padding-right: 20px;
+    padding-left: 20px; }
+
+/*Page: Photo.php
+********************************************************************/
+#photo_head {
+  font-size: 4.5em; }
+
+.album {
+  background-color: #3d3d3d;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-right: auto; }
+  .album h2 {
+    font-size: 3em; }
+  .album ul {
+    padding: 0;
+    list-style-type: none; }
+    .album ul li {
+      display: inline-block;
+      float: left; }
+  .album img {
+    margin: 10px;
+    border: 5px solid #fff;
+    border-radius: 10px; }
+
+/*Page: about.php
+********************************************************************/
+#staff {
+  background-color: #3d3d3d;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px; }
 
 /*Footer
 ********************************************************************/
