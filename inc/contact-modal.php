@@ -54,7 +54,7 @@ if (!$mail->ValidateAddress($email)){
     $email_body = $email_body . "Message: " . $message;
 
     $mail->SetFrom($email, $name);
-    $address = "pandadragoon@gmail.com";
+    $address = "some@email.com";
     $mail->AddAddress($address, "Chateau");
     $mail->Subject    = "Chateau Contact Form Submission | " . $subject;
     $mail->MsgHTML($email_body);
